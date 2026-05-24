@@ -1,52 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre o Projeto</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre o Projeto · BRINKS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/brinks.css">
 </head>
-
 <body>
 
-    <header>
-        <h1>Sobre o Projeto</h1>
-        <hr>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                 <li><a href="../paginas/somos.html">Integrantes do Projeto</a></li>
-                <li><a href="../paginas/faq.html">Perguntas frequentes</a> </li>
-                <li><a href="../paginas/contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <hr>
-    <main>
-        <section>
-            <h2>Sobre o Projeto</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ipsam, architecto laboriosam id itaque
-                ut quo doloribus debitis nemo cupiditate ullam officiis quaerat dicta sapiente cum accusantium accusamus
-                provident! Natus.</p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum debitis architecto omnis quo quos
-                excepturi consequuntur, aut similique fugiat numquam natus odio doloribus. Voluptatum placeat, ipsum
-                deserunt qui adipisci distinctio!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, tempore, mollitia eum dolor rerum
-                repudiandae cupiditate placeat enim ratione recusandae delectus voluptate! Ut modi, dolorum placeat,
-                enim ipsa tempora ipsum id omnis magni deserunt aspernatur nostrum vero sed libero quis doloremque est,
-                delectus saepe voluptate. Eligendi atque perspiciatis modi fugiat!
-            </p>
-        </section>
-    </main>
+<header class="site-header">
+  <a href="../index.html" class="brand">Brinks<span>.</span></a>
+  <nav class="site-nav">
+    <a href="../paginas/sobre.html" class="active">Sobre</a>
+    <a href="../paginas/somos.html">Equipe</a>
+    <a href="../paginas/faq.html">FAQ</a>
+    <a href="../paginas/contato.html">Contato</a>
+  </nav>
+</header>
 
-    <footer class="main-footer">
-        <p>&copy; 2026 - BRINKS - Todos os direitos reservados.</p>
-    </footer>
+<section class="page-hero">
+  <div class="pill">Sobre o Projeto</div>
+  <h1>O Desafio do <em>Avatar Inteligente</em></h1>
+  <p>Contexto, challenge, direcionamento técnico e critérios de avaliação da proposta do grupo Brinks.</p>
+</section>
+
+<main>
+
+  <!-- CONTEXTO -->
+  <div class="block">
+    <div class="block-label">Contexto</div>
+    <h2>A Plataforma SoulUp</h2>
+    <p>
+      A SoulUp é uma plataforma social focada em engajamento e impacto positivo,
+      onde os usuários realizam ações, interagem com conteúdos e participam de iniciativas
+      sustentáveis. Com o crescimento da plataforma e a diversidade de funcionalidades,
+      surge a necessidade de guiar o usuário de forma mais personalizada e proativa.
+    </p>
+    <p>
+      A introdução de um <strong>avatar inteligente</strong> permite criar uma experiência mais
+      dinâmica e interativa, atuando como um assistente dentro da plataforma. Esse avatar pode
+      acompanhar o comportamento do usuário, sugerir ações sustentáveis, auxiliar no cumprimento
+      de missões e até automatizar interações, tornando a jornada mais fluida e engajadora.
+    </p>
+  </div>
+
+  <hr>
+
+  <!-- CHALLENGE -->
+  <div class="block">
+    <div class="block-label">Desafio</div>
+    <h2>O Que Precisa Ser Resolvido</h2>
+    <p>
+      Criar uma solução que implemente um avatar inteligente capaz de interagir com o usuário
+      de forma contextual e personalizada, respondendo e viabilizando os seguintes aspectos:
+    </p>
+
+    <ol class="num-list">
+      <li>
+        <span class="n">01</span>
+        <p>Como <strong>adaptar o comportamento</strong> do avatar de acordo com o perfil e histórico do usuário?</p>
+      </li>
+      <li>
+        <span class="n">02</span>
+        <p>Como <strong>sugerir ações relevantes</strong> que incentivem práticas sustentáveis?</p>
+      </li>
+      <li>
+        <span class="n">03</span>
+        <p>Como <strong>acompanhar missões e progresso</strong> de forma automatizada?</p>
+      </li>
+      <li>
+        <span class="n">04</span>
+        <p>Como <strong>gerar conteúdo e interações automaticamente</strong> sem comprometer a autenticidade da plataforma?</p>
+      </li>
+    </ol>
+
+    <div class="highlight-box">
+      <p>
+        O avatar deve ser capaz de oferecer dicas, sugerir ações, acompanhar missões e criar
+        publicações automaticamente — sempre com foco em <strong>aumentar o engajamento</strong>
+        e o <strong>impacto positivo</strong>.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- DIRECIONAMENTO TÉCNICO -->
+  <div class="block">
+    <div class="block-label">Direcionamento Técnico</div>
+    <h2>Stack e Implementação</h2>
+    <p>
+      A implementação deve seguir o stack base do projeto, utilizando React e outras tecnologias
+      conhecidas pelo grupo. A escolha do banco de dados e a modelagem dos relacionamentos ficam
+      sob responsabilidade do grupo, devendo ser justificada de acordo com a proposta apresentada.
+    </p>
+    <p>
+      Outras linguagens, ferramentas ou serviços auxiliares podem ser utilizados para
+      integrações, automações ou scripts.
+    </p>
+    <div class="tags">
+      <span class="tag">React</span>
+      <span class="tag">Banco de Dados (a definir)</span>
+      <span class="tag">APIs de IA</span>
+      <span class="tag">Automações</span>
+      <span class="tag">Scripts auxiliares</span>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- SEGURANÇA -->
+  <div class="block">
+    <div class="block-label">Segurança</div>
+    <h2>Proteção e Privacidade</h2>
+    <div class="highlight-box">
+      <p>
+        A solução deverá equilibrar <strong>proteção e privacidade</strong>, adotando análise
+        baseada em padrão e recorrência, reduzindo falsos positivos e prevendo mecanismos de
+        revisão ou escalonamento em situações críticas.
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- EXPECTATIVAS -->
+  <div class="block">
+    <div class="block-label">O que esperamos</div>
+    <h2>Critérios de Avaliação</h2>
+    <p>
+      Mais do que um assistente simples, espera-se que o avatar se torne parte central da
+      experiência do usuário. A proposta deve refletir uma solução realista, com possibilidade
+      de evolução gradual — iniciando com regras simples e evoluindo para modelos mais avançados.
+    </p>
+    <div class="grid-2">
+      <div class="mini-card">
+        <h4>Escalabilidade</h4>
+        <p>Solução preparada para múltiplos usuários simultâneos.</p>
+      </div>
+      <div class="mini-card">
+        <h4>Performance</h4>
+        <p>Geração de recomendações em tempo real.</p>
+      </div>
+      <div class="mini-card">
+        <h4>Clareza</h4>
+        <p>Modelagem de comportamento e interações bem definida.</p>
+      </div>
+      <div class="mini-card">
+        <h4>Custo</h4>
+        <p>Implementação viável, especialmente em componentes inteligentes.</p>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  Grupo <strong>BRINKS</strong> &nbsp;·&nbsp; Challenge SoulUp &nbsp;·&nbsp; 2026
+</footer>
 
 </body>
-
 </html>
-
