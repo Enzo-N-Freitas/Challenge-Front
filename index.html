@@ -1,46 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title><link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Moderno</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Página Inicial</h1>
-        <hr>
-        <nav>
-            <ul>
-                <li><a href="./paginas/somos.html">Integrantes do Projeto</a></li>
-                <li><a href="./paginas/sobre.html">Sobre o Projeto</a></li>
-                <li><a href="./paginas/faq.html">Perguntas frequentes</a></li>
-                <li><a href="./paginas/contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <hr>
-    <main>
-        <section>
-            <h2></h2>
-                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis ipsam, architecto laboriosam id itaque
-                ut quo doloribus debitis nemo cupiditate ullam officiis quaerat dicta sapiente cum accusantium accusamus
-                provident! Natus.</p>
-            <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum debitis architecto omnis quo quos
-                excepturi consequuntur, aut similique fugiat numquam natus odio doloribus. Voluptatum placeat, ipsum
-                deserunt qui adipisci distinctio!
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, tempore, mollitia eum dolor rerum
-                repudiandae cupiditate placeat enim ratione recusandae delectus voluptate! Ut modi, dolorum placeat,
-                enim ipsa tempora ipsum id omnis magni deserunt aspernatur nostrum vero sed libero quis doloremque est,
-                delectus saepe voluptate. Eligendi atque perspiciatis modi fugiat!
-            </p>
-        </section>
-    </main>
 
-    <footer><p>&copy; 2026 - BRINKS - Todos os direitos reservados.</p></footer>
+<body>
+
+<header class="header" id="navbar">
+  <div class="logo">SoulUp</div>
+
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </label>
+
+  <nav class="nav">
+    <a href="#home">Home</a> 
+    <a href="#somos">Somos</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+    <a href="#faq">FAQ</a> 
+  </nav>
+</header>
+
+<section id="home" class="section hero">
+  <h1>Página Inicial - O Desafio</h1>
+</section>
+
+<section id="somos" class="section">
+  <h2>Somos</h2>
+  <p>A SoulUp é uma plataforma social focada em engajamento e impacto positivo,
+onde os usuários realizam ações, interagem com conteúdos e participam de iniciativas
+sustentáveis. Com o crescimento da plataforma e a diversidade de funcionalidades,
+surge a necessidade de guiar o usuário de forma mais personalizada e proativa.</p>
+</section>
+
+<section id="sobre" class="section">
+  <h2>Sobre</h2>
+</section>
+
+<section id="contato" class="section">
+  <h2>Contato</h2>
+</section>
+
+<section id="faq" class="section">
+  <h2>cONTATO</h2>
+</section>
+
+
+<script>
+  const navbar = document.getElementById("navbar");
+
+  window.addEventListener("scroll", () => {
+    navbar.classList.toggle("scrolled", window.scrollY > 50);
+  });
+
+  const toggle = document.getElementById("menu-toggle");
+  document.querySelectorAll(".nav a").forEach(link => {
+    link.addEventListener("click", () => toggle.checked = false);
+  });
+</script>
 
 </body>
-
 </html>
