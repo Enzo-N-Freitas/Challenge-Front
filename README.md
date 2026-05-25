@@ -62,5 +62,5 @@ O grupo utilizou o **Claude AI** como apoio para sugestões de estilização, es
 ## 🔗 Repositório
 
 ```bash
-https://github.com/Challenge-Brinks/Challenge-Front
+https://github.com/Enzo-N-Freitas/Challenge-Front
 ```
